@@ -1,0 +1,28 @@
+learning_rate 0.001
+batchsize 32
+       Letter  Resume  News  Report  Email  Memo  Form  ADVE  Scientific  Note
+count     568     121   189     266    600   621   432   231         262   202
+label2id: {'Letter': 0, 'Resume': 1, 'News': 2, 'Report': 3, 'Email': 4, 'Memo': 5, 'Form': 6, 'ADVE': 7, 'Scientific': 8, 'Note': 9}
+Train Len:: 2793	Test Len:: 699
+torch.Size([32, 3, 224, 224])
+torch.Size([32])
+= = = = = = = = flag 1.11 = = = = = = = = = = = = =
+
+
+Training started with  Swinv2ForImageClassification
+== Swinv2ForImageClassification ==
+Epoch : 001, Training: Loss: 2.1258, Accuracy: 21.3568%, Validation : Loss : 1.9390, Accuracy: 25.5747%, Time: 71.4074s
+Epoch : 002, Training: Loss: 2.0475, Accuracy: 25.8435%, Validation : Loss : 2.2512, Accuracy: 22.8448%, Time: 72.3924s
+Epoch : 003, Training: Loss: 2.1214, Accuracy: 21.4286%, Validation : Loss : 2.1762, Accuracy: 16.5230%, Time: 72.8880s
+Epoch : 004, Training: Loss: 2.1813, Accuracy: 18.7006%, Validation : Loss : 2.1878, Accuracy: 16.6667%, Time: 71.9918s
+Epoch : 005, Training: Loss: 2.0956, Accuracy: 21.0696%, Validation : Loss : 2.0986, Accuracy: 21.2644%, Time: 71.2257s
+Epoch : 006, Training: Loss: 2.0127, Accuracy: 23.2950%, Validation : Loss : 1.9691, Accuracy: 24.7126%, Time: 71.7661s
+Epoch : 007, Training: Loss: 1.9460, Accuracy: 26.2383%, Validation : Loss : 2.0714, Accuracy: 23.2759%, Time: 70.1996s
+Epoch : 008, Training: Loss: 1.9032, Accuracy: 27.2793%, Validation : Loss : 2.0198, Accuracy: 26.5805%, Time: 70.5691s
+Epoch : 009, Training: Loss: 1.9308, Accuracy: 26.4537%, Validation : Loss : 2.0293, Accuracy: 23.2759%, Time: 71.6753s
+Epoch : 010, Training: Loss: 1.9217, Accuracy: 25.6999%, Validation : Loss : 1.9168, Accuracy: 27.0115%, Time: 72.1326s
+Epoch : 011, Training: Loss: 1.9666, Accuracy: 25.9153%, Validation : Loss : 2.3675, Accuracy: 16.3793%, Time: 71.4019s
+Epoch : 012, Training: Loss: 2.0668, Accuracy: 22.3977%, Validation : Loss : 2.0187, Accuracy: 21.5517%, Time: 70.2648s
+Epoch : 013, Training: Loss: 2.0107, Accuracy: 22.3618%, Validation : Loss : 1.9993, Accuracy: 22.5575%, Time: 72.0848s
+Error in callback <function _draw_all_if_interactive at 0x7f94855ba310> (for post_execute):
+Error in callback <function flush_figures at 0x7f948559a820> (for post_execute):

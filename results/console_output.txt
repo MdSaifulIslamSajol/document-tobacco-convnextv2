@@ -1,0 +1,219 @@
+learning_rate 0.0001
+batchsize 100
+       Letter  Resume  News  Report  Email  Memo  Form  ADVE  Scientific  Note
+count     568     121   189     266    600   621   432   231         262   202
+label2id: {'Letter': 0, 'Resume': 1, 'News': 2, 'Report': 3, 'Email': 4, 'Memo': 5, 'Form': 6, 'ADVE': 7, 'Scientific': 8, 'Note': 9}
+Train Len:: 2793	Test Len:: 699
+torch.Size([32, 3, 224, 224])
+torch.Size([32])
+= = = = = = = = flag 1.11 = = = = = = = = = = = = =
+
+
+Training started with  Swinv2ForImageClassification
+== Swinv2ForImageClassification ==
+Epoch : 001, Training: Loss: 1.3257, Accuracy: 53.8241%, Validation : Loss : 1.0192, Accuracy: 66.2841%, Time: 69.2136s
+Epoch : 002, Training: Loss: 0.8258, Accuracy: 72.1005%, Validation : Loss : 0.7820, Accuracy: 75.0359%, Time: 71.4709s
+Epoch : 003, Training: Loss: 0.6440, Accuracy: 78.5996%, Validation : Loss : 0.6081, Accuracy: 79.9139%, Time: 75.5837s
+flag1
+Last epoch :  3
+Training Finished for   Swinv2ForImageClassification
+len(train_acc_list)  3
+len(valid_acc_list)  3
+== On test data ==
+Test Accuracy: 79.91%
+Precision: 0.8195
+Recall: 0.7891
+F1 Score: 0.7941
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.7480    0.7541    0.7510       122
+           1     0.9412    0.6400    0.7619        25
+           2     0.9487    0.9250    0.9367        40
+           3     0.4468    0.7925    0.5714        53
+           4     0.9820    0.9561    0.9689       114
+           5     0.8716    0.7724    0.8190       123
+           6     0.8315    0.9024    0.8655        82
+           7     0.9474    0.9730    0.9600        37
+           8     0.5610    0.3898    0.4600        59
+           9     0.9167    0.7857    0.8462        42
+
+    accuracy                         0.7991       697
+   macro avg     0.8195    0.7891    0.7941       697
+weighted avg     0.8183    0.7991    0.8017       697
+
+Class 0: Accuracy = 75.41%
+Class 1: Accuracy = 64.00%
+Class 2: Accuracy = 92.50%
+Class 3: Accuracy = 79.25%
+Class 4: Accuracy = 95.61%
+Class 5: Accuracy = 77.24%
+Class 6: Accuracy = 90.24%
+Class 7: Accuracy = 97.30%
+Class 8: Accuracy = 38.98%
+Class 9: Accuracy = 78.57%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+
+
+finished for  Swinv2ForImageClassification
+
+
+Training started with  ViTForImageClassification
+== ViTForImageClassification ==
+Epoch : 001, Training: Loss: 1.5316, Accuracy: 50.0539%, Validation : Loss : 1.2573, Accuracy: 57.3888%, Time: 66.3726s
+Epoch : 002, Training: Loss: 0.9487, Accuracy: 71.0233%, Validation : Loss : 0.8571, Accuracy: 74.6055%, Time: 69.1086s
+Epoch : 003, Training: Loss: 0.7026, Accuracy: 79.2460%, Validation : Loss : 0.7162, Accuracy: 78.4792%, Time: 67.4298s
+flag1
+Last epoch :  3
+Training Finished for   ViTForImageClassification
+len(train_acc_list)  3
+len(valid_acc_list)  3
+== On test data ==
+Test Accuracy: 78.48%
+Precision: 0.7762
+Recall: 0.7357
+F1 Score: 0.7403
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.7222    0.8525    0.7820       122
+           1     0.7143    0.4000    0.5128        25
+           2     0.9394    0.7750    0.8493        40
+           3     0.4744    0.6981    0.5649        53
+           4     0.9813    0.9211    0.9502       114
+           5     0.8060    0.8780    0.8405       123
+           6     0.8333    0.8537    0.8434        82
+           7     0.8571    0.9730    0.9114        37
+           8     0.5417    0.2203    0.3133        59
+           9     0.8919    0.7857    0.8354        42
+
+    accuracy                         0.7848       697
+   macro avg     0.7762    0.7357    0.7403       697
+weighted avg     0.7879    0.7848    0.7752       697
+
+Class 0: Accuracy = 85.25%
+Class 1: Accuracy = 40.00%
+Class 2: Accuracy = 77.50%
+Class 3: Accuracy = 69.81%
+Class 4: Accuracy = 92.11%
+Class 5: Accuracy = 87.80%
+Class 6: Accuracy = 85.37%
+Class 7: Accuracy = 97.30%
+Class 8: Accuracy = 22.03%
+Class 9: Accuracy = 78.57%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+
+
+finished for  ViTForImageClassification
+
+
+Training started with  ConvNextV2ForImageClassification
+== ConvNextV2ForImageClassification ==
+Epoch : 001, Training: Loss: 1.1410, Accuracy: 62.9803%, Validation : Loss : 0.7170, Accuracy: 76.0402%, Time: 70.3200s
+Epoch : 002, Training: Loss: 0.5286, Accuracy: 83.1598%, Validation : Loss : 0.5163, Accuracy: 82.3529%, Time: 68.5262s
+Epoch : 003, Training: Loss: 0.3120, Accuracy: 90.8797%, Validation : Loss : 0.4442, Accuracy: 85.9397%, Time: 68.3537s
+flag1
+Last epoch :  3
+Training Finished for   ConvNextV2ForImageClassification
+len(train_acc_list)  3
+len(valid_acc_list)  3
+== On test data ==
+Test Accuracy: 85.94%
+Precision: 0.8669
+Recall: 0.8213
+F1 Score: 0.8352
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.7603    0.9098    0.8284       122
+           1     0.9444    0.6800    0.7907        25
+           2     0.9231    0.9000    0.9114        40
+           3     0.6136    0.5094    0.5567        53
+           4     0.9823    0.9737    0.9780       114
+           5     0.8788    0.9431    0.9098       123
+           6     0.8602    0.9756    0.9143        82
+           7     0.8780    0.9730    0.9231        37
+           8     0.8286    0.4915    0.6170        59
+           9     1.0000    0.8571    0.9231        42
+
+    accuracy                         0.8594       697
+   macro avg     0.8669    0.8213    0.8352       697
+weighted avg     0.8605    0.8594    0.8529       697
+
+Class 0: Accuracy = 90.98%
+Class 1: Accuracy = 68.00%
+Class 2: Accuracy = 90.00%
+Class 3: Accuracy = 50.94%
+Class 4: Accuracy = 97.37%
+Class 5: Accuracy = 94.31%
+Class 6: Accuracy = 97.56%
+Class 7: Accuracy = 97.30%
+Class 8: Accuracy = 49.15%
+Class 9: Accuracy = 85.71%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+
+
+finished for  ConvNextV2ForImageClassification
+
+
+Training started with  CvtForImageClassification
+== CvtForImageClassification ==
+Epoch : 001, Training: Loss: 1.6538, Accuracy: 41.9390%, Validation : Loss : 1.1662, Accuracy: 61.9799%, Time: 72.2372s
+Epoch : 002, Training: Loss: 1.1860, Accuracy: 58.0251%, Validation : Loss : 1.1579, Accuracy: 62.9842%, Time: 72.9183s
+Epoch : 003, Training: Loss: 1.0369, Accuracy: 63.4470%, Validation : Loss : 0.6653, Accuracy: 79.3400%, Time: 71.0361s
+flag1
+Last epoch :  3
+Training Finished for   CvtForImageClassification
+len(train_acc_list)  3
+len(valid_acc_list)  3
+== On test data ==
+Test Accuracy: 79.34%
+Precision: 0.8159
+Recall: 0.7553
+F1 Score: 0.7688
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.7750    0.7623    0.7686       122
+           1     0.9231    0.4800    0.6316        25
+           2     0.9231    0.9000    0.9114        40
+           3     0.6000    0.3962    0.4773        53
+           4     0.9464    0.9298    0.9381       114
+           5     0.6832    0.8943    0.7746       123
+           6     0.7524    0.9634    0.8449        82
+           7     0.8750    0.9459    0.9091        37
+           8     0.7576    0.4237    0.5435        59
+           9     0.9231    0.8571    0.8889        42
+
+    accuracy                         0.7934       697
+   macro avg     0.8159    0.7553    0.7688       697
+weighted avg     0.7974    0.7934    0.7831       697
+
+Class 0: Accuracy = 76.23%
+Class 1: Accuracy = 48.00%
+Class 2: Accuracy = 90.00%
+Class 3: Accuracy = 39.62%
+Class 4: Accuracy = 92.98%
+Class 5: Accuracy = 89.43%
+Class 6: Accuracy = 96.34%
+Class 7: Accuracy = 94.59%
+Class 8: Accuracy = 42.37%
+Class 9: Accuracy = 85.71%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+
+
+finished for  CvtForImageClassification
+
+
+Training started with  EfficientFormerForImageClassification
+== EfficientFormerForImageClassification ==
+Epoch : 001, Training: Loss: 1.4068, Accuracy: 54.0754%, Validation : Loss : 1.4373, Accuracy: 52.7977%, Time: 67.4928s
+Error in callback <bound method AutoreloadMagics.post_execute_hook of <IPython.extensions.autoreload.AutoreloadMagics object at 0x7f4ed42fb310>> (for post_execute):

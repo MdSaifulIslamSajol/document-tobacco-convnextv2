@@ -1,0 +1,94 @@
+learning_rate 0.0001
+batchsize 32
+       Letter  Resume  News  Report  Email  Memo  Form  ADVE  Scientific  Note
+count     568     121   189     266    600   621   432   231         262   202
+label2id: {'Letter': 0, 'Resume': 1, 'News': 2, 'Report': 3, 'Email': 4, 'Memo': 5, 'Form': 6, 'ADVE': 7, 'Scientific': 8, 'Note': 9}
+Train Len:: 2793	Test Len:: 699
+torch.Size([32, 3, 224, 224])
+torch.Size([32])
+= = = = = = = = flag 1.11 = = = = = = = = = = = = =
+
+
+Training started with  ConvNextV2ForImageClassification
+== ConvNextV2ForImageClassification ==
+Epoch : 001, Training: Loss: 1.1524, Accuracy: 61.0991%, Validation : Loss : 0.8920, Accuracy: 71.2034%, Time: 62.1754s
+New best model saved with validation accuracy: 71.20%
+Epoch : 002, Training: Loss: 0.5619, Accuracy: 82.1480%, Validation : Loss : 0.5235, Accuracy: 82.3782%, Time: 63.4291s
+New best model saved with validation accuracy: 82.38%
+Epoch : 003, Training: Loss: 0.3530, Accuracy: 88.7572%, Validation : Loss : 0.4215, Accuracy: 87.2493%, Time: 64.6772s
+New best model saved with validation accuracy: 87.25%
+Epoch : 004, Training: Loss: 0.2516, Accuracy: 92.0618%, Validation : Loss : 0.4625, Accuracy: 84.6705%, Time: 63.2377s
+Epoch : 005, Training: Loss: 0.1750, Accuracy: 94.8276%, Validation : Loss : 0.3954, Accuracy: 87.3926%, Time: 62.0097s
+New best model saved with validation accuracy: 87.39%
+Epoch : 006, Training: Loss: 0.1436, Accuracy: 95.5460%, Validation : Loss : 0.3722, Accuracy: 87.3926%, Time: 65.7946s
+Epoch : 007, Training: Loss: 0.0977, Accuracy: 97.2701%, Validation : Loss : 0.4359, Accuracy: 87.3926%, Time: 62.5478s
+Epoch : 008, Training: Loss: 0.0739, Accuracy: 97.7011%, Validation : Loss : 0.4398, Accuracy: 87.3926%, Time: 62.7269s
+Epoch : 009, Training: Loss: 0.0653, Accuracy: 98.1681%, Validation : Loss : 0.3903, Accuracy: 89.9713%, Time: 62.9534s
+New best model saved with validation accuracy: 89.97%
+Epoch : 010, Training: Loss: 0.0273, Accuracy: 99.5330%, Validation : Loss : 0.4023, Accuracy: 90.1146%, Time: 63.0460s
+New best model saved with validation accuracy: 90.11%
+Epoch : 011, Training: Loss: 0.0431, Accuracy: 98.7428%, Validation : Loss : 0.4740, Accuracy: 88.3954%, Time: 64.5412s
+Epoch : 012, Training: Loss: 0.0326, Accuracy: 99.2816%, Validation : Loss : 0.4199, Accuracy: 89.9713%, Time: 66.3946s
+Epoch : 013, Training: Loss: 0.0211, Accuracy: 99.5330%, Validation : Loss : 0.4289, Accuracy: 89.6848%, Time: 63.6072s
+Epoch : 014, Training: Loss: 0.0184, Accuracy: 99.5330%, Validation : Loss : 0.4901, Accuracy: 89.8281%, Time: 65.0162s
+Epoch : 015, Training: Loss: 0.0220, Accuracy: 99.4612%, Validation : Loss : 0.5228, Accuracy: 88.3954%, Time: 70.5316s
+Epoch : 016, Training: Loss: 0.0198, Accuracy: 99.3894%, Validation : Loss : 0.5052, Accuracy: 88.3954%, Time: 65.5057s
+Epoch : 017, Training: Loss: 0.0560, Accuracy: 98.2759%, Validation : Loss : 0.4961, Accuracy: 87.5358%, Time: 63.4191s
+Epoch : 018, Training: Loss: 0.0370, Accuracy: 98.8865%, Validation : Loss : 0.4648, Accuracy: 89.2550%, Time: 63.6986s
+Epoch : 019, Training: Loss: 0.0096, Accuracy: 99.8922%, Validation : Loss : 0.4808, Accuracy: 89.8281%, Time: 63.5167s
+Epoch : 020, Training: Loss: 0.0204, Accuracy: 99.2816%, Validation : Loss : 0.5352, Accuracy: 87.6791%, Time: 63.3164s
+Epoch : 021, Training: Loss: 0.0402, Accuracy: 98.7428%, Validation : Loss : 0.4118, Accuracy: 88.1089%, Time: 64.7669s
+Epoch : 022, Training: Loss: 0.0658, Accuracy: 98.0963%, Validation : Loss : 0.7075, Accuracy: 84.8138%, Time: 64.5411s
+Epoch : 023, Training: Loss: 0.0651, Accuracy: 98.0244%, Validation : Loss : 0.5040, Accuracy: 88.2521%, Time: 63.0394s
+Epoch : 024, Training: Loss: 0.0408, Accuracy: 98.6710%, Validation : Loss : 0.4678, Accuracy: 88.9685%, Time: 62.5342s
+flag1
+Last epoch :  24
+Total training time: 1557.01 seconds
+Maximum GPU memory used during training: 321.08 MB
+Inference time per batch: 0.0134 seconds
+Total number of trainable parameters: 27874186
+Training Finished for   ConvNextV2ForImageClassification
+len(train_acc_list)  24
+len(valid_acc_list)  24
+== On test data ==
+Test Accuracy on beest model: 90.11%
+Precision: 0.9091
+Recall: 0.8709
+F1 Score: 0.8861
+AUC Score: 0.9877
+classification report
+
+              precision    recall  f1-score   support
+
+           0     0.8417    0.9669    0.9000       121
+           1     0.9565    0.7857    0.8627        28
+           2     1.0000    0.9730    0.9863        37
+           3     0.7391    0.5965    0.6602        57
+           4     0.9913    0.9828    0.9870       116
+           5     0.8739    0.9720    0.9204       107
+           6     0.9247    0.9451    0.9348        91
+           7     0.9375    0.9783    0.9574        46
+           8     0.8261    0.7037    0.7600        54
+           9     1.0000    0.8049    0.8919        41
+
+    accuracy                         0.9011       698
+   macro avg     0.9091    0.8709    0.8861       698
+weighted avg     0.9014    0.9011    0.8981       698
+
+Class 0: Accuracy = 96.69%
+Class 1: Accuracy = 78.57%
+Class 2: Accuracy = 97.30%
+Class 3: Accuracy = 59.65%
+Class 4: Accuracy = 98.28%
+Class 5: Accuracy = 97.20%
+Class 6: Accuracy = 94.51%
+Class 7: Accuracy = 97.83%
+Class 8: Accuracy = 70.37%
+Class 9: Accuracy = 80.49%
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+= = = = = = = = flag 1.12 = = = = = = = = = = = = =
+
+
+finished for  ConvNextV2ForImageClassification
+= = = = = = = = execution finished = = = = = = = = = = = = =
+[4;33mReloaded modules[24m: my_models[0m
